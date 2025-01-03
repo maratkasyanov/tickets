@@ -1,1 +1,2 @@
-# tickets![2025-01-03_06-53-37](https://github.com/user-attachments/assets/8fda3984-30bc-46e4-9223-c861989b1e79)
+
+![2025-01-03_07-25-07](https://github.com/user-attachments/assets/253cd6e5-bd10-4ce2-9e27-2f49482f8f52)
