@@ -49,7 +49,7 @@ body {
   position: absolute;
   width: 250px; /* Размер блика */
   height: 100px; /* Размер блика */
-  background: radial-gradient(circle, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0));
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0));
   border-radius: 50%;
   pointer-events: none;
   filter: blur(30px);
