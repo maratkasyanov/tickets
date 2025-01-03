@@ -1,0 +1,59 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #000;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#app {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  position: absolute;
+  display: inline-block;
+  transform-style: preserve-3d;
+  perspective: 600px;
+  transition: transform 0.2s ease-out;
+}
+
+.wrapper-upper {
+  z-index: 2; /* Верхняя картинка всегда сверху */
+}
+
+.wrapper-lower {
+  z-index: 1; /* Нижняя картинка находится под верхней */
+  right: -300px;
+  transform: translateZ(300px);
+}
+
+.interactive-image {
+  width: 300px; /* Размер обеих картинок одинаковый */
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  pointer-events: none;
+  overflow: hidden;
+  position: relative;
+  filter: brightness(77%);
+}
+
+.glare {
+  position: absolute;
+  width: 250px; /* Размер блика */
+  height: 100px; /* Размер блика */
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0));
+  border-radius: 50%;
+  pointer-events: none;
+  filter: blur(30px);
+  opacity: 0.4; /* Блик слегка видим */
+  transform: translate(-50%, -50%) scale(1);
+  transition: left 0.2s ease, top 0.2s ease, opacity 0.2s ease, transform 0.2s ease;
+}
