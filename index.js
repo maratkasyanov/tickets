@@ -43,8 +43,8 @@ document.addEventListener('DOMContentLoaded', () => {
   };
 
   document.addEventListener('mousemove', (e) => {
-    const followX = (window.innerWidth / 2 - e.clientX) / 20;
-    const followY = (window.innerHeight / 2 - e.clientY) / 20;
+    const followX = (window.innerWidth / 2 - e.clientX) / 70;
+    const followY = (window.innerHeight / 2 - e.clientY) / 30;
 
     targetY = Math.max(-maxAngle, Math.min(maxAngle, -followX));
     targetX = Math.max(-maxAngle, Math.min(maxAngle, followY));
