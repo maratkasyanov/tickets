@@ -42,18 +42,18 @@ body {
   pointer-events: none;
   overflow: hidden;
   position: relative;
-  filter: brightness(77%);
+  filter: brightness(97%);
 }
 
 .glare {
   position: absolute;
-  width: 250px; /* Размер блика */
+  width: 140px; /* Размер блика */
   height: 100px; /* Размер блика */
-  background: radial-gradient(circle, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0));
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.93), rgba(255, 255, 255, 0.3));
   border-radius: 50%;
   pointer-events: none;
-  filter: blur(30px);
-  opacity: 0.4; /* Блик слегка видим */
+  filter: blur(20px);
+  opacity: 0.6; /* Блик слегка видим */
   transform: translate(-50%, -50%) scale(1);
   transition: left 0.2s ease, top 0.2s ease, opacity 0.2s ease, transform 0.2s ease;
 }
